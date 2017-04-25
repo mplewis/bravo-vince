@@ -7,22 +7,22 @@ export default {
   name: 'Body',
   render () {
     return (
-      <div class="container">
-        <div class="row">
-          <div class="column">
+      <div class='container'>
+        <div class='row'>
+          <div class='column'>
             <Header />
           </div>
         </div>
-        <div class="row">
-          <div class="column">
+        <div class='row'>
+          <div class='column'>
             <Input />
           </div>
-          <div class="column">
+          <div class='column'>
             <Output />
           </div>
         </div>
-        <div class="row">
-          <div class="column">
+        <div class='row'>
+          <div class='column'>
             <Footer />
           </div>
         </div>
