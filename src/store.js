@@ -4,15 +4,22 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 
 const state = {
-  input: ''
+  output: ''
 }
 
 const mutations = {
-  SAVE_INPUT (state, input) {
-    state.input = input
+  SAVE_OUTPUT (state, output) {
+    state.output = output
   }
 }
 
-const store = new Vuex.Store({ state, mutations })
+const actions = {
+  newInput ({ commit }, input) {
+    console.log(commit, input)
+    commit('SAVE_OUTPUT', input)
+  }
+}
+
+const store = new Vuex.Store({ state, mutations, actions })
 
 export default store

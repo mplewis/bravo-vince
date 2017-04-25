@@ -7,11 +7,11 @@ export default {
   },
   methods: {
     handleKeyup (e) {
-      this.$store.commit('SAVE_INPUT', e.target.value)
+      this.$store.dispatch('newInput', e.target.value)
     }
   },
   created () {
-    this.$store.commit('SAVE_INPUT', this.default)
+    this.$store.dispatch('newInput', this.default)
   },
   render () {
     return (
