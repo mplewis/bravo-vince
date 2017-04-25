@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
+import bravoify from './utils/bravoify'
+
 Vue.use(Vuex)
 
 const state = {
@@ -15,8 +17,7 @@ const mutations = {
 
 const actions = {
   newInput ({ commit }, input) {
-    console.log(commit, input)
-    commit('SAVE_OUTPUT', input)
+    commit('SAVE_OUTPUT', bravoify(input))
   }
 }
 

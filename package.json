@@ -22,6 +22,7 @@
     "style-loader": "^0.16.1",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.1",
+    "url-loader": "^0.5.8",
     "vbuild": "^7.1.1"
   },
   "dependencies": {

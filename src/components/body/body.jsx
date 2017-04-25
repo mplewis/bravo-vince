@@ -1,7 +1,7 @@
 import Header from '../header/header.jsx'
 import Input from '../input/input.jsx'
 import Output from '../output/output.jsx'
-import Footer from '../footer/footer.jsx'
+import GhBanner from '../gh_banner/gh_banner.jsx'
 
 import style from './body.styl'
 
@@ -10,6 +10,7 @@ export default {
   render () {
     return (
       <div class={style.body}>
+        <GhBanner />
         <div className='container'>
           <div class='row'>
             <div class='column'>
@@ -18,15 +19,10 @@ export default {
           </div>
           <div class='row'>
             <div class='column'>
-              <Input default='BRAVO VINCE' />
+              <Input default='bravo vince artichoke' />
             </div>
             <div class='column'>
               <Output />
-            </div>
-          </div>
-          <div class='row'>
-            <div class='column'>
-              <Footer />
             </div>
           </div>
         </div>
