@@ -1,5 +1,6 @@
 import Vue from 'vue'
 
+import store from './store.js'
 import Body from './components/body/body.jsx'
 
 /* eslint-disable */
@@ -7,9 +8,9 @@ import '!style-loader!css-loader!milligram/dist/milligram.css'
 import '!style-loader!css-loader!./app.styl'
 /* eslint-enable */
 
-const vue = new Vue({
-  el: '#app',
-  render () { return <Body /> }
+const app = new Vue({
+  store,
+  ...Body
 })
 
-export default vue
+app.$mount('#app')

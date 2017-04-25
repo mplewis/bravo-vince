@@ -2,7 +2,7 @@ export default {
   name: 'Output',
   render () {
     return (
-      <h1>Output</h1>
+      <pre><code>{this.$store.state.input}</code></pre>
     )
   }
 }

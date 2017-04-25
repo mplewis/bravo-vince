@@ -25,6 +25,7 @@
     "vbuild": "^7.1.1"
   },
   "dependencies": {
-    "milligram": "^1.3.0"
+    "milligram": "^1.3.0",
+    "vuex": "^2.3.1"
   }
 }

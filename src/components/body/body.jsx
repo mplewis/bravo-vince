@@ -5,8 +5,6 @@ import Footer from '../footer/footer.jsx'
 
 import style from './body.styl'
 
-console.log(style)
-
 export default {
   name: 'Body',
   render () {
@@ -20,7 +18,7 @@ export default {
           </div>
           <div class='row'>
             <div class='column'>
-              <Input />
+              <Input default='BRAVO VINCE' />
             </div>
             <div class='column'>
               <Output />
