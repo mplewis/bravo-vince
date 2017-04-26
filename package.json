@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "vbuild dev",
     "build": "vbuild",
-    "deploy": "script/deploy.sh"
+    "deploy": "script/deploy.js"
   },
   "devDependencies": {
     "del": "^2.2.2",
