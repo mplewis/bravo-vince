@@ -1,3 +1,6 @@
 module.exports = {
-  cssModules: true
+  cssModules: true,
+  html: {
+    template: 'src/index.html'
+  }
 }
