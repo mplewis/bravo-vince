@@ -19,8 +19,10 @@ export default {
           </div>
           <div class='row'>
             <div class='column'>
-              <Input default='bravo vince artichoke' />
+              <Input class={style.input} default='bravo vince artichoke' />
             </div>
+          </div>
+          <div class='row'>
             <div class='column'>
               <Output />
             </div>
